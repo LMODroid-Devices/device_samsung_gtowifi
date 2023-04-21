@@ -22,14 +22,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
+$(call inherit-product, vendor/lmodroid/config/common_full_tablet_wifionly.mk)
 
 PRODUCT_CHARACTERISTICS := tablet
 
 PRODUCT_BRAND := samsung
 PRODUCT_DEVICE := gtowifi
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_NAME := lineage_gtowifi
+PRODUCT_NAME := lmodroid_gtowifi
 PRODUCT_MODEL := SM-T290
 
 PRODUCT_SYSTEM_NAME := gtowifixx
