@@ -1,5 +1,5 @@
 # All files below are from gtowifixx, unless otherwise specified
-# gtowifixx-user 11 RP1A.200720.012 T290XXU3CVG3 release-keys
+# gtoxx-user 11 RP1A.200720.012 T295XXS6CWG6 release-keys
 
 # ADSP
 vendor/bin/adsprpcd
@@ -33,10 +33,6 @@ vendor/lib/libaudioalsa.so
 vendor/lib/libdrc.so
 vendor/lib/libsurround_3mic_proc.so
 vendor/lib/soundfx/libasphere.so
-vendor/lib/soundfx/libaudioeffectoffload.so
-vendor/lib/soundfx/libqcbassboost.so
-vendor/lib/soundfx/libqcreverb.so
-vendor/lib/soundfx/libqcvirt.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
 vendor/lib64/libacdbrtac.so
@@ -46,9 +42,6 @@ vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libaudioalsa.so
 -vendor/lib64/libaudioparsers.so
 vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libaudioeffectoffload.so
-vendor/lib64/soundfx/libqcbassboost.so
-vendor/lib64/soundfx/libqcvirt.so
 
 # Audio-ACDB
 vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
@@ -59,28 +52,6 @@ vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
-vendor/etc/acdbdata/MTP_chc/MTP_chc_Bluetooth_cal.acdb
-vendor/etc/acdbdata/MTP_chc/MTP_chc_General_cal.acdb
-vendor/etc/acdbdata/MTP_chc/MTP_chc_Global_cal.acdb
-vendor/etc/acdbdata/MTP_chc/MTP_chc_Handset_cal.acdb
-vendor/etc/acdbdata/MTP_chc/MTP_chc_Hdmi_cal.acdb
-vendor/etc/acdbdata/MTP_chc/MTP_chc_Headset_cal.acdb
-vendor/etc/acdbdata/MTP_chc/MTP_chc_Speaker_cal.acdb
-vendor/etc/acdbdata/MTP_chc/MTP_chc_workspaceFile.qwsp
-vendor/etc/acdbdata/MTP_sea/MTP_sea_Bluetooth_cal.acdb
-vendor/etc/acdbdata/MTP_sea/MTP_sea_General_cal.acdb
-vendor/etc/acdbdata/MTP_sea/MTP_sea_Global_cal.acdb
-vendor/etc/acdbdata/MTP_sea/MTP_sea_Handset_cal.acdb
-vendor/etc/acdbdata/MTP_sea/MTP_sea_Hdmi_cal.acdb
-vendor/etc/acdbdata/MTP_sea/MTP_sea_Headset_cal.acdb
-vendor/etc/acdbdata/MTP_sea/MTP_sea_Speaker_cal.acdb
-vendor/etc/acdbdata/MTP_sea/MTP_sea_workspaceFile.qwsp
-
-# Audio-Hardware
-vendor/lib/soundfx/libgearvr.so
-vendor/lib/soundfx/libplaybackrecorder.so
-vendor/lib/soundfx/libswdap.so
-vendor/lib64/soundfx/libswdap.so
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
@@ -1054,10 +1025,6 @@ vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 vendor/lib/libscalar.so
 vendor/lib64/libscalar.so
 
-# Dolby
-vendor/etc/dolby/dax-default.xml
-vendor/etc/media_codecs_dolby_audio.xml
-
 # ESE
 vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
 vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc
@@ -1325,8 +1292,6 @@ vendor/lib64/libreffeature.so
 
 # Media
 vendor/lib/libmulawdec.so
-vendor/lib/libstagefright_soft_ac4dec.so
-vendor/lib/libstagefright_soft_ddpdec.so
 vendor/lib/libstagefright_soft_qtiflacdec.so
 vendor/lib/libvqzip.so
 vendor/lib64/libmulawdec.so
@@ -1529,10 +1494,6 @@ vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so
 
 # SSR
 vendor/bin/ssr_diag
-vendor/bin/ssr_setup
-vendor/bin/subsystem_ramdump
-vendor/lib/libsubsystem_control.so
-vendor/lib64/libsubsystem_control.so
 
 # Seccam
 system_ext/lib/libseccam.so
@@ -1644,7 +1605,6 @@ vendor/lib64/libhdcpsrm.so
 # WiFi
 vendor/bin/cnss-daemon
 vendor/bin/cnss_diag
-vendor/etc/init/wifi_qcom.rc
 
 # WiFi (WiGig)
 vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
