@@ -71,10 +71,8 @@ TARGET_NO_BOOTLOADER := true
 
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
-
-SOONG_CONFIG_NAMESPACES += samsungCameraVars
-SOONG_CONFIG_samsungCameraVars += needs_sec_get_cam_pos_v1
-SOONG_CONFIG_samsungCameraVars_needs_sec_get_cam_pos_v1 := true
+BOARD_QTI_CAMERA_32BIT_ONLY := true
+TARGET_SUPPORT_HAL1 := false
 
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
@@ -149,9 +147,6 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/samsung/sdm429
 TARGET_KERNEL_CONFIG := lineageos_gtowifi_defconfig
 TARGET_KERNEL_VERSION := 4.9
-TARGET_KERNEL_CLANG_VERSION := r416183b
-TARGET_KERNEL_CLANG_PATH := $(abspath .)/prebuilts/clang/kernel/$(HOST_PREBUILT_TAG)/clang-$(TARGET_KERNEL_CLANG_VERSION)
-TARGET_KERNEL_LLVM_BINUTILS := false
 
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true

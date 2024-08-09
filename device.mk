@@ -1,7 +1,7 @@
 #
 # Copyright (C) 2022 The Android Open Source Project
 # Copyright (C) 2022 SebaUbuntu's TWRP device tree generator
-# Copyright (C) 2022-2023 The LineageOS Project
+# Copyright (C) 2022-2024 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -69,11 +69,11 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.frameworks.displayservice@1.0.vendor \
     android.frameworks.sensorservice@1.0.vendor \
-    vendor.qti.hardware.camera.device@1.0.vendor \
-    android.hardware.camera.provider@2.5-legacy.samsung \
-    android.hardware.camera.provider@2.5-service.samsung
+    android.hardware.camera.provider@2.4-service \
+    android.hardware.camera.provider@2.4-impl \
+    camera.msm8937 \
+    vendor.qti.hardware.camera.device@1.0.vendor
 
 # Capability Configstore
 PRODUCT_PACKAGES += \
@@ -132,7 +132,9 @@ PRODUCT_PACKAGES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.1.vendor
+    android.hardware.health@2.1-impl:64 \
+    android.hardware.health@2.1-impl.recovery \
+    android.hardware.health@2.1-service
 
 # HIDL
 PRODUCT_PACKAGES += \
