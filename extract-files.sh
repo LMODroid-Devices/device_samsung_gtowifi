@@ -30,15 +30,11 @@ source "${HELPER}"
 # Default to sanitizing the vendor folder before extraction
 CLEAN_VENDOR=true
 
-ONLY_FIRMWARE=
 KANG=
 SECTION=
 
 while [ "${#}" -gt 0 ]; do
     case "${1}" in
-        --only-firmware)
-            ONLY_FIRMWARE=true
-            ;;
         -n | --no-cleanup)
             CLEAN_VENDOR=false
             ;;
