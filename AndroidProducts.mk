@@ -6,4 +6,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_gtowifi.mk
+    $(LOCAL_DIR)/lmodroid_gtowifi.mk

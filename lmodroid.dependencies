@@ -1,9 +1,11 @@
 [
   {
+    "remote": "lineage",
     "repository": "android_hardware_samsung",
     "target_path": "hardware/samsung"
   },
   {
+    "remote": "lineage",
     "repository": "android_kernel_samsung_sdm429",
     "target_path": "kernel/samsung/sdm429"
   }
